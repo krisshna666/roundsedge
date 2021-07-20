@@ -1,0 +1,34 @@
+
+<div id="weathermains">
+    <div class="titlecont">
+        <h1>Weather Tracker</h1>
+        <div style="display: flex;">
+        <input type="text" placeholder="enter any city" #vals><i style="padding: 5px;background-color: dodgerblue;color: white;" (click)="search(vals.value)" class="fa fa-search" aria-hidden="true"></i>
+        </div>
+    </div>
+
+
+<br>
+<div id="weatherandmap">
+<div id="weatherdetails">
+    <div style="display:flex;flex-direction: column;">
+<h2>{{vals.value}}</h2>
+<div style="display: flex;gap:50px">
+<img width="100px" height="100px" [ngClass]="boo?'display':'none'" src="../../assets/m2i8m2A0b1b1i8A0.png">
+<h2 id="mintemp">{{data1.main.temp_min-273|number : '1.2-2'}}&nbsp;C</h2>
+
+</div>
+<h3 *ngFor="let i of data1.weather"><b>Descriptors</b>&nbsp;&nbsp;:&nbsp;&nbsp;{{i.description}}</h3>
+<h3 *ngFor="let i of data1.weather"><b>Form</b>&nbsp;&nbsp;:&nbsp;&nbsp;{{i.main}}</h3>
+
+</div>
+<em>"Weather forecasts spanning across 1500 cities"</em>
+
+<div>{{lat1}}</div>
+</div><br>
+<div class="maps">
+<agm-map [latitude]="data1.coord.lat" [longitude]="data1.coord.lon">
+    <agm-marker [latitude]="data1.coord.lat" [longitude]="data1.coord.lon"></agm-marker>
+  </agm-map>
+  </div>
+  </div>

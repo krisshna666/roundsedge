@@ -1,0 +1,17 @@
+<!-- <div id="messages" style="font-weight: bold;"></div> -->
+<h1>ANONYMOUS CHATROOMS</h1>
+<div [ngClass]="disp1?'displays1':'none1'" >
+    <div id="chatjoins">
+<input type="text" placeholder="give a nickname" #myname="ngModel" ngModel><br><br>
+<div style="display: flex;border:1 px solid rgb(255, 236, 236);cursor: pointer;" (click)="join(myname.value)" >
+<i style="padding:5px;font-size: 2em;color:dodgerblue" class="fa fa-sign-in" aria-hidden="true"></i>
+<h2>Join now!</h2>
+</div>
+</div>
+
+</div>
+<div [ngClass]="disp?'displays':'none'">
+<div *ngFor="let i of data1" style="box-shadow: 5px 10px #8888;" ><br><br><div><span style="font-size: 1.8em;font-weight: bold;color:gray"><u>{{i.sender}}</u></span><br><br><span  style="font-size: 1.5em;font-weight: bold;">:</span><span style="font-size: 1.5em;font-weight: bold;  word-break: break-all;">{{i.message}}</span><span (click)="del(i.key)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i  class="fa fa-trash-o" aria-hidden="true"></i></span></div><p style="margin-right: -100px;">{{i.Date|date:'shortTime'}}</p><img src="../../assets/double-check.png" style="width: 20px;height: 20px;"></div><br>&nbsp;&nbsp;<br>
+<div id="inputs"><input type="text" id="pw" #pw >&nbsp;<button (click)="sri(pw.value)">Send</button></div>
+</div>
+

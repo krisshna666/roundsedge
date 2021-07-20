@@ -1,0 +1,56 @@
+<div class="nav">
+    <div><a [routerLink]="['/listings']" style="color:rgb(172, 172, 172);">HOME</a>
+         <a style="color:rgb(223, 5, 5);">USER</a>
+    </div>
+    <div>
+        <a style="color:rgb(223, 5, 5);">LOGOUT</a>
+    </div> 
+</div>
+
+<div class="content1" >
+    <div class="cont1txt">Bluewoods data Services</div>
+    <button class="butn">Get Started</button>
+</div>
+
+<div class="content2">
+    <div class="form">
+        <form #forms="ngForm">
+            <br>
+            <h2>Weather:</h2>
+            <input class="form-control" name="state" placeholder="State" [(ngModel)]="lst.state"> 
+            <input class="form-control" name="city" placeholder="City" [(ngModel)]="lst.city"> 
+            <input class="form-control" name="mintemp" placeholder="Min Temperature" [(ngModel)]="lst.mintemp"> 
+            <input class="form-control" name="maxtemp" placeholder="Max Temperature" [(ngModel)]="lst.maxtemp"> 
+            <input class="form-control" name="cc" placeholder="Current climate" [(ngModel)]="lst.cc"> 
+            <input id="addbtn" class="btn btn-success" type="button" (click)="add(forms)"value="Add"> 
+        </form>
+    </div>
+</div>
+
+<div class="content3">
+    <h2>Weather Report</h2>
+    <table>
+        <tr>
+           <th>S.No</th>
+            <th>State</th>
+            <th>City</th>
+            <th>Min Temperature</th>
+            <th>Max Temperature</th>
+            <th>Current climate</th>
+            <th>Delete list</th>
+        </tr>
+        <tr *ngFor= "let i of data| paginate: {itemsPerPage:5,currentPage:p};let j=index">
+<td>{{j+1}}</td>
+<td>{{i.state}}</td>
+<td>{{i.city}}</td>
+<td>{{i.mintemp}}</td>
+<td>{{i.maxtemp}}</td>
+<td>{{i.cc}}</td>
+<td><i (click)="Del(i.key)" class="fa fa-trash-o" aria-hidden="true"></i></td><br>
+        </tr>
+        <tr>
+            <th colspan="9"><div class="pagnum"><pagination-controls (pageChange)="p=$event"></pagination-controls></div></th>
+        </tr>
+    </table>
+</div>
+

@@ -1,0 +1,38 @@
+<div class="mainarea">
+    <form nz-form [formGroup]="validateForm" class="login-form" (ngSubmit)="submitForm()">
+      <nz-form-item>
+        <nz-form-control nzErrorTip="Please input your username!">
+          <nz-input-group nzPrefixIcon="user">
+            <input type="text" nz-input formControlName="userName" #users placeholder="Username" />
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+      <nz-form-item>
+        <nz-form-control nzErrorTip="Please input your Password!">
+          <nz-input-group nzPrefixIcon="lock">
+            <input type="password" nz-input formControlName="password" #pws placeholder="Password" />
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+      <div nz-row class="login-form-margin">
+        <div nz-col [nzSpan]="12">
+          <label nz-checkbox formControlName="remember">
+            <span>Remember me&nbsp;<input type="checkbox"></span>
+          </label>
+        </div>
+
+   
+      </div>
+      <button  (click)="onSignin(users.value,pws.value)"  nz-button class="login-form-button login-form-margin" [nzType]="'primary'">Log in</button>
+      <button (click)="loginWithGmail()" nz-button class="login-form-button login-form-margin" [nzType]="'danger'" ><a class="btngoogle"   style="width: 100%; margin-top: 10px;padding: 10px;">
+        <img width="20px" style="margin-bottom:3px; margin-right:5px" alt="Google sign-in" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />
+      Google&nbsp;&nbsp;&nbsp;</a></button><br>
+      <button (click)="loginwithfb()" nz-button class="login-form-button login-form-margin" [nzType]="'default'" ><a >
+        <img width="20px" src="https://pngimg.com/uploads/facebook_logos/facebook_logos_PNG19753.png"/>Facebook
+        </a></button>
+      Or <a [routerLink]="['\signup']"> register now! </a>
+    </form>
+    <router-outlet></router-outlet>
+    </div>
+    
+  

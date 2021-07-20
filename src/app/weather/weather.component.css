@@ -1,0 +1,68 @@
+@media screen and (min-width:1024px){
+    .titlecont{
+           
+        margin-left: 300px;
+    }
+}
+
+#weathermains{
+    margin-left: 150px;
+}
+::placeholder{
+    text-align: center;
+}
+#weatherdetails{
+    margin-left: 200px;
+}
+.display{
+    display: block;
+}
+.none{
+    display: none;
+}
+#weatherdetails{
+    width: 400px;
+    height: 400px;
+    box-shadow: 5px 5px 10px #8888;
+    padding: 50px;
+    margin-left:15px;
+}
+#mintemp,#maxtemp{
+    margin-top: 30px;
+}
+agm-map{
+    width:400px;
+    height:400px;
+}
+#weatherandmap{
+    display: flex;
+
+}
+@media screen and (max-width: 768px)
+{
+    agm-map{
+        width:312px;
+        height:312px;
+    }
+    #weathermains{
+        margin-left: 0px;
+        padding: 50px;
+    }
+    #weatherdetails{
+        margin-left: -50px;
+        width: 140%;
+        
+    }
+    #weatherandmap{
+        display: flex;
+        flex-direction: column;
+
+    }
+.maps{
+        margin-left: -50px;
+        width: 100px;
+    }
+    input{
+        margin-left: -10px;
+    }
+}

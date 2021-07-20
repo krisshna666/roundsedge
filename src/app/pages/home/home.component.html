@@ -1,0 +1,34 @@
+<div class="mains">
+<img id="imgs" src="https://www.pinclipart.com/picdir/big/347-3475475_generic-company-logo-clipart-best-generic-company-logo.png" width="100px" height="60px"><br><br>
+
+<h1 translate>home.title</h1>
+<h2 translate>home.welcome_text</h2><br>
+<div style="display: flex;justify-content: space-around;">
+    <img class="imgtexts" style="border-radius: 50%;" src="https://analyticsinsight.b-cdn.net/wp-content/uploads/2021/01/Cloud-Computing-1024x576.jpg" width="100px" height="100px" >
+    <img class="imgtexts" style="border-radius: 50%;" src="https://www.netstar.co.uk/wp-content/uploads/2012/10/Cloud-computing-image-640x483.jpg" width="100px" height="100px" >
+    <img class="imgtexts" style="border-radius: 50%;" src="https://sm.pcmag.com/t/pcmag_in/guide/t/the-best-c/the-best-cloud-storage-and-file-sharing-services-for-2021_8g7v.1200.jpg" width="100px" height="100px" >
+    <img class="imgtexts" style="border-radius: 50%;" src="https://www.netstar.co.uk/wp-content/uploads/2012/10/Cloud-computing-image-640x483.jpg" width="100px" height="100px" >
+
+</div>
+<div style="display:flex;gap:170px;margin-left: 80px;">
+<h3 translate>home.services1</h3>
+<h3 translate>home.services2</h3>
+<h3 translate>home.services3</h3>
+<h3 translate>home.services4</h3>
+</div>
+
+
+<!-- #docregion mat-menu-trigger-for -->
+<div class="dropdown">
+    <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Select any language
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a (click)="changeLang('en')" class="dropdown-item" style="color:black">English</a>
+      <a (click)="changeLang('es')" class="dropdown-item" style="color:black" >Espanol</a>
+      <a (click)="changeLang('tn')" class="dropdown-item" style="color:black" >Tamil</a>
+      <a (click)="changeLang('hd')" class="dropdown-item" style="color:black" >Hindi</a>
+    </div>
+  </div>
+
+<br><br><br>

@@ -1,0 +1,28 @@
+
+  <table >
+
+        <tr>
+            <th>S.NO</th>
+            <th>STATE</th>
+            <th>CITY</th>
+            <th>MINTEMP</th>
+      
+            <th>DESC</th>
+        </tr>
+      <tr *ngFor="let i of data;let f=index">
+          <td>{{f+1}}</td>
+    <td>{{i.state}}</td>
+    <td>{{i.city}}</td>
+    <td>{{i.mintemp}}</td>
+  
+    <td>{{i.cc}}</td>
+    </tr>
+
+  </table><br>
+
+
+
+ <button (click)="popsi()">Show charts</button>
+ <div id="weatherchartss">
+    <canvas id="myChart" width="700" height="250" #mychart></canvas>
+ </div>

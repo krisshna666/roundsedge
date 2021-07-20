@@ -1,0 +1,78 @@
+@media screen and (min-width: 800px)
+{ 
+table{
+    table-layout: fixed;
+    width: 100%;
+  
+ 
+}
+#myChart{
+    width: 300px;
+    height: 300px;
+}
+.backbtn{
+    cursor: pointer;
+}
+td,th{
+    padding-left: 40px;
+}
+/* td{
+    font-style: italic;
+} */
+
+button{
+    background-color: dodgerblue;
+    border-radius: 10px;
+    border:1px solid white;
+    color: white;
+    margin-left: 400px;
+    outline: none;
+}
+#weathercharts{
+    width:30%;
+    height: 23%;
+    margin-left: 300px;
+}
+}
+@media screen and (max-width: 600px)
+{ 
+table{
+    table-layout: fixed;
+    width: 100%;
+  border: 1px solid black;
+ 
+}
+.backbtn{
+    cursor: pointer;
+}
+td,th{
+    padding-left: 10px;
+    font-size: 0.7em;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+tr:nth-child(even){
+    background-color: rgb(219, 116, 136)
+}
+/* td{
+    font-style: italic;
+} */
+
+button{
+    background-color: dodgerblue;
+    border-radius: 10px;
+    border:1px solid white;
+    color: white;
+    margin-left: 50px;
+    outline: none;
+}
+#weathercharts{
+    width:30%;
+    height: 50%;
+    margin-left: 100px;
+}
+#myChart{
+    width: 300px;
+    height: 300px;
+}
+}

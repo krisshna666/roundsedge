@@ -1,0 +1,60 @@
+#pw{
+    width: 260px;
+  }
+  img{
+    width: 300px;
+    height: 300px;
+  }
+  h1{
+margin-left: 300px;
+  }
+       .sender{
+    word-break: break-all;
+  }
+   .recipient{
+     word-break: break-all;
+   }
+   .displays1{
+     display: block;
+   }
+   .none1{
+     display: none;
+   }
+   .displays{
+     display: block;
+   }
+   .none{
+     display:none;
+   }
+   .left-bubble
+   {
+    margin-left: 10px;
+   }
+   .right-bubble{
+margin-right: 10px;
+   }
+   div:nth-child(even){
+       margin-right: 0px;
+   }
+   @media only screen and (min-width: 800px){
+h1{
+  margin-left: 450px;
+}
+#chatjoins{
+  margin-left: 500px
+}
+#inputs{
+  margin-left: 500px;
+}
+   }
+   @media only screen and (max-width: 600px){
+    h1{
+      margin-left: -15px;
+    }
+    #chatjoins{
+      margin-left: 55px
+    }
+    #inputs{
+      margin-left: 5px;
+    }
+       }

@@ -1,0 +1,41 @@
+@media screen and (min-width: 1024px)
+{
+a{
+    margin-left: 10px;
+}
+.nav{
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 380px;
+    background-color: crimson;
+    width: 530px;
+    padding:10px;
+    border-radius: 20px;
+    color: white;
+  }
+  a{
+    margin-left: 20px;
+    color:white
+  }
+}
+@media screen and (max-width: 768px)
+{
+    a{
+        margin-left: 5px;
+    }
+    .nav{
+        height: 30px;
+        margin-top: 10px;
+        margin-left: -30px;
+        background-color: crimson;
+        width: 370px;
+        padding:6px;
+        border-radius: 20px;
+        color: white;
+      }
+      a{
+        margin-left: 20px;
+        color:white;
+        font-size: 0.6em;
+      }
+}

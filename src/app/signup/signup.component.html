@@ -1,0 +1,22 @@
+<div class="signup">
+    <label>Email</label><br>
+    <div style="display:flex">
+      <i class="fa fa-user" aria-hidden="true"></i>
+    <input #emailSignup="ngModel" name="users1" type="email" ngModel required>
+    
+    </div><br>
+    <label>password</label><br>
+    <div style="display:flex">
+      <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+    <input #passwordSignup="ngModel" name="inputpw1" type="password" ngModel required>
+    <div ></div>
+    </div><br>
+    <label>Confirm password</label><br>
+    <div style="display:flex">
+      <i class="fa fa-unlock" aria-hidden="true"></i>
+    <input  #passwordSignup1="ngModel" type="password" ngModel required>
+    </div>
+    <div class="errors" *ngIf="passwordSignup.value!=passwordSignup1.value">Both passwords do not match</div><br><br>
+    <button nz-button class="login-form-button login-form-margin" [nzType]="'primary'" (click)="onSignup(emailSignup.value,passwordSignup.value)">Signup</button><br><br>
+    </div>
+

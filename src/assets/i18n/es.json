@@ -1,0 +1,13 @@
+{
+    "home":{
+        "title":"pagina de inicio",
+        "welcome_text": "Somos un socio de consultoría tecnológica boutique, especializado en soluciones nativas en la nube. Estamos obsesionados con cualquier cosa “NUBE”. Nuestro objetivo es automatizar sin problemas el ciclo de vida del desarrollo, modernizar la infraestructura y sus aplicaciones asociadas. ",
+        "services1":"Kubernetes y Docker",
+        "services2":"Soporte IOT",
+        "services3":"Entrenamiento intensivo SaaS" ,
+        "services4":"impresionante entorno devops"
+    },
+    "settings":{
+        "title":"es_Setting page"
+    }
+}

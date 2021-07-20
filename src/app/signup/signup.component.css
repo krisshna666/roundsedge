@@ -1,0 +1,22 @@
+i{
+    padding: 5px;
+    background-color: black;
+    color: white;
+  }
+  .errors{
+    color: red;
+  }
+  
+  button{
+      /* background-color: dodgerblue;
+      color: white; */
+      border-radius: 20px;
+      border:1px solid white;
+      margin-left: 50px;
+  }
+  @media only screen and (min-width: 800px)
+  {
+      .signup{
+margin-left: 70px;
+      }
+  }

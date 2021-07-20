@@ -1,0 +1,31 @@
+
+      .login-form {
+        max-width: 300px;
+      }
+
+      .login-form-margin {
+        margin-bottom: 16px;
+      }
+
+      .login-form-forgot {
+        float: right;
+      }
+
+      .login-form-button {
+        width: 100%;
+      }
+    .errors{
+      color:red;
+    }
+
+    @media only screen and (min-width: 800px)
+    {
+      .mainarea{
+        margin-top:5px;
+        margin-left: 100px;
+        padding-left: 290px;
+        padding-top: 10px;
+        border: 0.5px solid black;
+        box-shadow: 5px 10px #888888;
+      }
+    }

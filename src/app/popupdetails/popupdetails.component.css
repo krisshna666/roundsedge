@@ -1,0 +1,58 @@
+@media only screen and (min-width: 800px)
+{
+.backgrounds{
+    width: 200vw;
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1501386761578-eac5c94b800a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y3Jvd2QlMjBjaGVlcmluZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80");
+background-repeat:no-repeat;
+margin-left: 50px;
+}
+.black{
+    width: 20%;
+    height: 50%;
+    background-color: black;
+    margin-left: 230px;
+    color:white;
+    border: 2px solid white;
+}
+.para2{
+    margin-top: -10px;
+}
+u{
+    margin-left: 20px;
+justify-content: center;
+text-align: justify;
+margin-top: 30px;
+}
+img{
+    width: 200px;
+    height: 100px;
+    margin-left: 20px;
+}
+.para1{
+    display: flex;
+    margin-right: 20px;
+}
+.covidmaps{
+    display: flex;
+}
+em{
+    margin-left: 20px;
+justify-content: center;
+text-align: justify;
+margin-top: 30px;
+}
+h1{
+    font-size: 4em;
+    padding-top:50px;
+    color: white;
+    font-weight: bolder;
+    padding-left: 250px;
+
+}
+}
+img{
+    width: 200px;
+    height: 100px;
+    margin-left: 20px;
+}

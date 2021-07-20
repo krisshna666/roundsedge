@@ -1,0 +1,106 @@
+tr,td{
+    border:1px solid black;
+    border-collapse: collapse;
+}
+table{
+    table-layout: fixed;
+}
+#confirmed{
+    padding:50px;
+    background-color:red;
+    color: white;
+}
+#recovered{
+    padding: 50px;
+    background-color:green;
+    color: white;
+}
+#deaths{
+    padding: 50px;
+    background-color: blue;
+    color:white
+}
+#newdeaths{
+    padding:50px;
+    background-color:dodgerblue;
+    color: white;
+}
+#coviddata{
+    display: flex;
+    justify-content: space-around;
+}
+.nav{
+    height: 40px;
+    margin-top: 10px;
+}
+
+.cortitle{
+  margin-left: 420px;
+}
+.cortitle1{
+    margin-left: 410px;
+  }
+.chartview{
+    width: 400px;
+    margin-left: 330px;
+}
+#covidmains{
+    margin-left: 100px;
+}
+@media  screen and (max-width: 768px)
+{
+    a{
+        margin-left: 10px;
+        font-size: 12px;
+    }
+    .cortitle{
+      margin-left: 50px;
+    }
+    .cortitle1{
+        margin-left: 38px;
+      }
+    .chartview{
+        width: 200px;
+        margin-left: 60px;
+    }
+    #mains{
+        width: 80%;
+        height: 80%;
+    }
+    #confirmed{
+        width: 200px;
+        text-align: center;
+        margin-left:65px;
+        padding:5px;
+        background-color:red;
+        color: white;
+    }
+    #recovered{
+        width: 200px;
+        margin-left:65px;
+        text-align: center;
+        padding: 5px;
+        background-color:green;
+        color: white;
+    }
+    #deaths{
+        width: 200px;
+        margin-left:65px;
+        text-align: center;
+        padding: 5px;
+        background-color: blue;
+        color:white
+    }
+    #coviddata{
+        display: flex;
+        flex-direction: column;
+    }
+    #newdeaths{
+        width: 200px;
+        margin-left:65px;
+        text-align: center;
+        padding:5px;
+        background-color:dodgerblue;
+        color: white;
+    }
+}
