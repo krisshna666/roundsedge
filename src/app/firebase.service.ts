@@ -20,7 +20,7 @@ export class FirebaseService {
     .then(res=>{
       this.isLoggedIn = true
       localStorage.setItem('user',JSON.stringify(res.user));
-
+      this._auths.list("users6").push({"Email":email,"Password":password});
  if(email.slice(-9)=="admin.com")
  {
    this._router.navigate(["/administrator"]);
@@ -40,7 +40,7 @@ export class FirebaseService {
       localStorage.setItem('user',JSON.stringify(res.user));
       this._router.navigate(["/login"]);
       
-    this._auths.list("users4").push({"Email":email,"Password":password});
+   
      
     })
 }

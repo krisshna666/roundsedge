@@ -49,6 +49,9 @@ table{
 }
 @media  screen and (max-width: 768px)
 {
+    #covidmains{
+        margin-left: 10px;
+    }
     a{
         margin-left: 10px;
         font-size: 12px;

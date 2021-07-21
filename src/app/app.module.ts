@@ -37,6 +37,7 @@ import { AdminComponent } from './admin/admin.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { AgmCoreModule } from '@agm/core';
 import {} from '@google/maps';
+
 import { UsersComponent } from './users/users.component';
 import {DemoMaterialModule} from '../app/material-module';
 import {MatMenuModule} from '@angular/material/menu';
@@ -67,7 +68,8 @@ export function rootLoaderFactory(http: HttpClient){
     UserlistComponent,
     WeatherComponent,
     AdminComponent,
-    UsersComponent
+    UsersComponent,
+
   ],
   imports: [
     NzLayoutModule,
@@ -105,7 +107,7 @@ apiKey:'AIzaSyDTAf8qHlQkf0-kdhBIPaJk0b7rw6wJtW8'
   
     CommonModule 
   ],
-  providers: [{ provide: NZ_I18N, useValue: en_US }],
+  providers: [{ provide: NZ_I18N, useValue: en_US },AuthService],
   bootstrap: [AppComponent],
   entryComponents:[PopupdetailsComponent]
 

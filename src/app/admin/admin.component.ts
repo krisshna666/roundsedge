@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFireDatabase } from '@angular/fire/database';
 import { AngularFireList } from '@angular/fire/database';
+import { ActivatedRoute, Router } from '@angular/router';
+import { AuthService } from '../auth.service';
 @Component({
   selector: 'app-admin',
   templateUrl: './admin.component.html',
@@ -20,7 +22,7 @@ lst={
 p:number=1;
   data:any;
 
-  constructor(private _auths: AngularFireDatabase) {
+  constructor(private _auths: AngularFireDatabase,private router:Router,private route:ActivatedRoute,private auth:AuthService) {
    const item: AngularFireList<any>=this._auths.list("users4");
     item.snapshotChanges().subscribe(data => {
      
@@ -44,5 +46,17 @@ Del(af:any)
 }
   ngOnInit(): void {
   }
+  canDeactivate(){
+    return new Promise((resolve, reject) => {
+  
+      resolve(confirm('Do you want to Logout?')),this.auth.setLoggedIn(false),
+      alert("Loggedout Successfully");
+    
+      
+    })
+  }
 
+  list(){
+    this.router.navigate(['/list'],{relativeTo:this.route});
+  }
 }

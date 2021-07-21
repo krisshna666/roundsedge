@@ -14,15 +14,13 @@
           </nz-input-group>
         </nz-form-control>
       </nz-form-item>
-      <div nz-row class="login-form-margin">
+      <!-- <div nz-row class="login-form-margin">
         <div nz-col [nzSpan]="12">
           <label nz-checkbox formControlName="remember">
             <span>Remember me&nbsp;<input type="checkbox"></span>
           </label>
         </div>
-
-   
-      </div>
+      </div> -->
       <button  (click)="onSignin(users.value,pws.value)"  nz-button class="login-form-button login-form-margin" [nzType]="'primary'">Log in</button>
       <button (click)="loginWithGmail()" nz-button class="login-form-button login-form-margin" [nzType]="'danger'" ><a class="btngoogle"   style="width: 100%; margin-top: 10px;padding: 10px;">
         <img width="20px" style="margin-bottom:3px; margin-right:5px" alt="Google sign-in" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />

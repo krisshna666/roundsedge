@@ -1,0 +1,10 @@
+@media only screen and (min-width: 1024px)
+{
+#gridsys{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+h1{
+    margin-left: 400px;
+}
+}

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
+import { AuthService } from '../auth.service';
 import { PopupdetailsComponent} from '../popupdetails/popupdetails.component';
 
 @Component({
@@ -10,9 +11,18 @@ import { PopupdetailsComponent} from '../popupdetails/popupdetails.component';
 })
 export class UsersComponent implements OnInit {
 
-  constructor(private mat:MatDialog,private router:Router, private route:ActivatedRoute) { }
+  constructor(private mat:MatDialog,private router:Router, private route:ActivatedRoute, private auth:AuthService) { }
 
   ngOnInit(): void {
+  }
+  canDeactivate(){
+    return new Promise((resolve, reject) => {
+  
+      resolve(confirm('Do you want to Logout?')),this.auth.setLoggedIn(false),
+      alert("Loggedout Successfully");
+    
+      
+    })
   }
   popsi(){
     this.mat.open(PopupdetailsComponent);

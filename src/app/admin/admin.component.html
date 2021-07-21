@@ -1,9 +1,9 @@
 <div class="nav">
-    <div><a [routerLink]="['/listings']" style="color:rgb(172, 172, 172);">HOME</a>
-         <a style="color:rgb(223, 5, 5);">USER</a>
+    <div><a  style="color:rgb(172, 172, 172);" (click)="list()">HOME</a>
+         <a style="color:rgb(223, 5, 5);" [routerLink]="['/login']">USER</a>
     </div>
     <div>
-        <a style="color:rgb(223, 5, 5);">LOGOUT</a>
+        <a [routerLink]="['/login']" style="color:rgb(223, 5, 5);">LOGOUT</a>
     </div> 
 </div>
 
