@@ -43,6 +43,7 @@
       <div class="app-header"  [ngClass]="colors?'black':'white'">
         <div style="display: flex;justify-content: space-between;margin-left: 10px;">
         <span style="margin-top: -10px;" class="header-trigger" (click)="isCollapsed = !isCollapsed">
+     
             <i  [ngClass]="colors1?'black1':'white1'"  class="trigger"
                nz-icon 
                [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"
@@ -51,9 +52,12 @@
         </span>
 
         <div style="margin-right:20px">
+         
         <mat-slide-toggle style="margin-top: 20px;" (click)="Slides()"></mat-slide-toggle>&nbsp;&nbsp;&nbsp;
         <i [ngClass]="colors1?'black1':'white1'" style="font-size: 1.5em;" class="fa fa-sun-o" aria-hidden="true"></i>
+   
         </div>
+        <p style="margin-right: 30px;cursor: pointer;"  [ngClass]="colors1?'black1':'white1'" [routerLink]="['User/chat']" >Chat&nbsp;<i style="font-size: 1.5em;" class="fa fa-comments-o" aria-hidden="true"></i></p>
         </div>
       </div>
     

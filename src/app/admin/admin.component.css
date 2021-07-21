@@ -49,10 +49,10 @@ td{
     padding:20px
 }
 #addbtn{
-    margin-left: 450px;
+    margin-left: 500px;
 }
 .content3{
-    margin-left: 1px;
+    margin-left: 50px;
 }
 @media screen and (max-width:768px){
     .content1{
@@ -109,6 +109,6 @@ td{
         padding:4px
     }
     .content3{
-        margin-left: 2px;
+        margin-left: 0px;
     }
 }

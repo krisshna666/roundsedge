@@ -1,7 +1,7 @@
 @media screen and (min-width:1024px){
     .titlecont{
            
-        margin-left: 300px;
+        margin-left: 400px;
     }
 }
 
@@ -12,7 +12,7 @@
     text-align: center;
 }
 #weatherdetails{
-    margin-left: 200px;
+    margin-left: 300px;
 }
 .display{
     display: block;
@@ -25,7 +25,7 @@
     height: 400px;
     box-shadow: 5px 5px 10px #8888;
     padding: 50px;
-    margin-left:15px;
+
 }
 #mintemp,#maxtemp{
     margin-top: 30px;
@@ -36,7 +36,12 @@ agm-map{
 }
 #weatherandmap{
     display: flex;
+    flex-direction: column;
+    margin-left: 5px;
 
+}
+.maps{
+    margin-left: 300px;
 }
 @media screen and (max-width: 768px)
 {
@@ -64,5 +69,11 @@ agm-map{
     }
     input{
         margin-left: -10px;
+    }
+    .display{
+        display: block;
+    }
+    .none{
+        display: none;
     }
 }

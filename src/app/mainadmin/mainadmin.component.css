@@ -1,3 +1,6 @@
+@media only screen and (min-width: 1024px)
+{ 
+
 .nav{
     width: 100%;
     display: flex;
@@ -7,4 +10,28 @@ a{
     margin-left: 10px;
     font-size: 14px;
     
+}
+h1{
+    margin-left: 470px;
+}
+}
+@media only screen and (max-width: 768px){
+    .nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    a{
+        margin-left: 10px;
+        font-size: 14px;
+        
+    }
+    .nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    h1{
+        margin-left: 70px;
+    }
 }
