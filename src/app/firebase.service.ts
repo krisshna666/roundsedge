@@ -5,7 +5,7 @@ import {Router} from '@angular/router';
 // import * as firebase from 'firebase/app';
 import { AngularFireDatabase } from '@angular/fire/database';
 import firebase from 'firebase/app';
-
+import { AuthService } from './auth.service';
 import 'firebase/auth';
 @Injectable({
   providedIn: 'root'
@@ -14,7 +14,7 @@ export class FirebaseService {
 
   isLoggedIn = false;
   
-  constructor(public firebaseAuth : AngularFireAuth,private _router:Router,private _auths: AngularFireDatabase) { }
+  constructor(public firebaseAuth : AngularFireAuth,private _router:Router,private _auths: AngularFireDatabase,private auth:AuthService) { }
   async signin(email: string, password : string){
     await this.firebaseAuth.signInWithEmailAndPassword(email,password)
     .then(res=>{
@@ -55,7 +55,8 @@ async loginwithGoogle(){
   await this.firebaseAuth.signInWithPopup(new firebase.auth.GoogleAuthProvider()).then(
     res=>{
       alert("logged in successfully");
-      this._router.navigate(["/mainadmin/administrator"]);
+      this.auth.setLoggedIn(true); 
+      this._router.navigate(["/User/translator"]);
     }).catch(
       err=>{
         alert("Error persists during login");
@@ -67,7 +68,8 @@ async loginwithGoogle(){
     await this.firebaseAuth.signInWithPopup(new firebase.auth.FacebookAuthProvider()).then(
       res=>{
         alert("logged in successfully");
-        this._router.navigate(["/mainadmin/administrator"]);
+        this.auth.setLoggedIn(true); 
+        this._router.navigate(["/User/translator"]);
         
       }).catch(
         err=>{
