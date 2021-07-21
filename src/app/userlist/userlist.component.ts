@@ -17,7 +17,7 @@ export class UserlistComponent implements OnInit {
   data1:any=[];
   ctx:any;
   ctx1:any;
-  
+  p:number=1;
   canvas: any;
   canvas1:any;
   
@@ -48,9 +48,9 @@ export class UserlistComponent implements OnInit {
 
 
      
-      var xValues = ["Confirmed","Deaths","TotalRecovered","NewRecovered"];
-var yValues = [54,53,12,34];
-var barColors = ["red", "green","blue","orange","brown"];
+      var xValues = ["minimum temp","maximum temp","above Sea-level temp","below sea level temp"];
+var yValues = [25,26,30,34];
+var barColors = ["dodgerblue","lightgreen","pink","lightgrey"];
 
 new Chart(this.ctx, {
   type: "bar",

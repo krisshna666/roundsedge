@@ -1,0 +1,10 @@
+<div class="nav">
+    <div><a  style="color:rgb(172, 172, 172);" [routerLink]="['administrator']">HOME</a>
+         <a style="color:rgb(223, 5, 5);" [routerLink]="['mainusers']">USER</a>
+         <a [routerLink]="['list']">UPDATES</a>
+    </div><br>
+    <div>
+        <a [routerLink]="['/login']" style="color:rgb(223, 5, 5);">LOGOUT</a>
+    </div> 
+</div><br>
+<router-outlet></router-outlet>

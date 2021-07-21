@@ -1,6 +1,6 @@
 import { Component, ElementRef, OnInit, ViewChild,DoCheck } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { PopupdetailsComponent } from '../popupdetails/popupdetails.component';
+
 import { AngularFireDatabase } from '@angular/fire/database';
 import { HttpClient } from '@angular/common/http';
 import { Chart,registerables } from 'chart.js';

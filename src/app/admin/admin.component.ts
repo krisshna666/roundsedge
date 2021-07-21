@@ -46,17 +46,5 @@ Del(af:any)
 }
   ngOnInit(): void {
   }
-  canDeactivate(){
-    return new Promise((resolve, reject) => {
-  
-      resolve(confirm('Do you want to Logout?')),this.auth.setLoggedIn(false),
-      alert("Loggedout Successfully");
-    
-      
-    })
-  }
-
-  list(){
-    this.router.navigate(['/list'],{relativeTo:this.route});
-  }
+ 
 }

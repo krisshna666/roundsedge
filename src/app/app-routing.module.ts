@@ -4,6 +4,7 @@ import { AdminComponent } from './admin/admin.component';
 import { ChatComponent } from './chat/chat.component';
 import { TestCanActivate, TestCanDeactivate } from './guards';
 import { LoginComponent } from './login/login.component';
+import { MainadminComponent } from './mainadmin/mainadmin.component';
 import { MainusersComponent } from './mainusers/mainusers.component';
 import { HomeComponent } from './pages/home/home.component';
 import { PopupdetailsComponent } from './popupdetails/popupdetails.component';
@@ -18,11 +19,11 @@ const routes: Routes = [
   { path: 'welcome', loadChildren: () => import('./pages/welcome/welcome.module').then(m => m.WelcomeModule) },
 
   {path:'chat',component:ChatComponent},
-  {path:'popup',component:PopupdetailsComponent},
-  {path:'covid-dashboard',component:UserdetailsComponent},
-  {path:'weather-dashboard',component:WeatherComponent},
-  {path:'adminarena',component:UserlistComponent},
-  {path:'administrator',component:AdminComponent,canActivate:[TestCanActivate],canDeactivate:[TestCanDeactivate],children:[{path:'list',component:UserlistComponent}]},
+
+  // {path:'popup',component:PopupdetailsComponent},
+  // {path:'covid-dashboard',component:UserdetailsComponent},
+  // {path:'weather-dashboard',component:WeatherComponent},
+  {path:'mainadmin',component:MainadminComponent,canActivate:[TestCanActivate],canDeactivate:[TestCanDeactivate],children:[{path:'list',component:UserlistComponent},  {path:'mainusers',component:MainusersComponent},{path:'administrator',component:AdminComponent}]},
   {path:'listings',component:UserlistComponent},
   { path: 'login', component: LoginComponent,
   children: [{ path: 'signup', component: SignupComponent } ]},
@@ -32,7 +33,7 @@ const routes: Routes = [
   {path:'weather-dashboard',component:WeatherComponent},
   {path:'listings',component:UserlistComponent},
   {path:'translator',component:HomeComponent}]},
-  {path:'mainusers',component:MainusersComponent}
+
 
 ];
 

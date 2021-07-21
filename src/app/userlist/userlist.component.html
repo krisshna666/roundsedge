@@ -9,7 +9,7 @@
       
             <th>DESC</th>
         </tr>
-      <tr *ngFor="let i of data;let f=index">
+      <tr *ngFor="let i of data|paginate: {itemsPerPage:5,currentPage:p};let f=index;">
           <td>{{f+1}}</td>
     <td>{{i.state}}</td>
     <td>{{i.city}}</td>
@@ -17,6 +17,9 @@
   
     <td>{{i.cc}}</td>
     </tr>
+    <tr>
+      <td colspan="9"><div class="pagnum"><pagination-controls (pageChange)="p=$event"></pagination-controls></div></td>
+  </tr>
 
   </table><br>
 

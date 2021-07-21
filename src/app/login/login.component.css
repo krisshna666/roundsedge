@@ -17,7 +17,21 @@
     .errors{
       color:red;
     }
-
+    h1{
+      margin-left: 100px;
+      color: red;
+    }
+    em{
+      font-weight: bolder;
+      margin-left: 60px;
+      font-size: 1.3em;
+    }
+    .mainarea{
+      margin-top:5px;
+      margin-left: 18px;
+    
+    
+    }
     @media only screen and (min-width: 800px)
     {
       .mainarea{
@@ -27,5 +41,14 @@
         padding-top: 10px;
         border: 0.5px solid black;
         box-shadow: 5px 10px #888888;
+      }
+      h1{
+        margin-left: 100px;
+        color: red;
+      }
+      em{
+        font-weight: bolder;
+        margin-left: 60px;
+        font-size: 1.3em;
       }
     }

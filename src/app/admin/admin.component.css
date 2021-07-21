@@ -1,13 +1,6 @@
-.nav{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-a{
-    margin-left: 15px;
-    font-size: 17px;
-    
-}
+
+
+
 .content1{
     margin-top: 25px;
     background-image: url("https://wallpaperbat.com/img/125980-download-free-rain-wallpaper-im-a-pluviophile.jpg");
@@ -56,7 +49,10 @@ td{
     padding:20px
 }
 #addbtn{
-    margin-left: 400px;
+    margin-left: 450px;
+}
+.content3{
+    margin-left: 1px;
 }
 @media screen and (max-width:768px){
     .content1{
@@ -87,7 +83,7 @@ td{
         margin-left: 115px;
     }
     #addbtn{
-        margin-left: 50px;
+        margin-left: 80px;
         width:125px
     }
 
@@ -111,5 +107,8 @@ td{
     td{
         padding-left: 4px;
         padding:4px
+    }
+    .content3{
+        margin-left: 2px;
     }
 }

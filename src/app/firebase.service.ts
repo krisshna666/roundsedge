@@ -23,7 +23,7 @@ export class FirebaseService {
       this._auths.list("users6").push({"Email":email,"Password":password});
  if(email.slice(-9)=="admin.com")
  {
-   this._router.navigate(["/administrator"]);
+   this._router.navigate(["/mainadmin/administrator"]);
  }
  else {
     this._router.navigate(["/User/translator"]);
@@ -54,21 +54,24 @@ async signup1(email:string,password:string){
 async loginwithGoogle(){
   await this.firebaseAuth.signInWithPopup(new firebase.auth.GoogleAuthProvider()).then(
     res=>{
-      alert("login has done successfully")
+      alert("logged in successfully");
+      this._router.navigate(["/mainadmin/administrator"]);
     }).catch(
       err=>{
-        alert("Error occurs during login");
+        alert("Error persists during login");
         console.log(err);
       })
+     
   }
   async signinwithfb(){
     await this.firebaseAuth.signInWithPopup(new firebase.auth.FacebookAuthProvider()).then(
       res=>{
-        alert("login has done successfully")
+        alert("logged in successfully");
+        this._router.navigate(["/mainadmin/administrator"]);
         
       }).catch(
         err=>{
-          alert("Error occurs during login");
+          alert("Error persists during login");
           console.log(err);
         })
       }

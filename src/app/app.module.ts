@@ -36,8 +36,9 @@ import { WeatherComponent } from './weather/weather.component';
 import { AdminComponent } from './admin/admin.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { AgmCoreModule } from '@agm/core';
+import { MainusersComponent } from './mainusers/mainusers.component';
 import {} from '@google/maps';
-
+import { MainadminComponent } from './mainadmin/mainadmin.component';
 import { UsersComponent } from './users/users.component';
 import {DemoMaterialModule} from '../app/material-module';
 import {MatMenuModule} from '@angular/material/menu';
@@ -69,6 +70,8 @@ export function rootLoaderFactory(http: HttpClient){
     WeatherComponent,
     AdminComponent,
     UsersComponent,
+    MainusersComponent,
+    MainadminComponent
 
   ],
   imports: [

@@ -1,7 +1,7 @@
 @media screen and (min-width: 800px)
 { 
 table{
-    table-layout: fixed;
+    table-layout: auto;
     width: 100%;
   
  
@@ -13,7 +13,7 @@ table{
 .backbtn{
     cursor: pointer;
 }
-td,th{
+td{
     padding-left: 40px;
 }
 /* td{
@@ -25,7 +25,7 @@ button{
     border-radius: 10px;
     border:1px solid white;
     color: white;
-    margin-left: 400px;
+    margin-left: 500px;
     outline: none;
 }
 #weathercharts{
@@ -33,23 +33,29 @@ button{
     height: 23%;
     margin-left: 300px;
 }
+tr:nth-child(even){
+    background-color: rgb(219, 116, 136)
+}
+.pagnum{
+    margin-left: 400px;
+}
 }
 @media screen and (max-width: 600px)
 { 
 table{
-    table-layout: fixed;
+    table-layout: auto;
     width: 100%;
-  border: 1px solid black;
+
  
 }
 .backbtn{
     cursor: pointer;
 }
-td,th{
+td{
     padding-left: 10px;
     font-size: 0.7em;
-    border: 1px solid black;
-    border-collapse: collapse;
+ 
+  
 }
 tr:nth-child(even){
     background-color: rgb(219, 116, 136)
@@ -63,7 +69,7 @@ button{
     border-radius: 10px;
     border:1px solid white;
     color: white;
-    margin-left: 50px;
+    margin-left: 90px;
     outline: none;
 }
 #weathercharts{
@@ -72,7 +78,7 @@ button{
     margin-left: 100px;
 }
 #myChart{
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
 }
 }

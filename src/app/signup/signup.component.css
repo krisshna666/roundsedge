@@ -1,3 +1,4 @@
+
 i{
     padding: 5px;
     background-color: black;
@@ -14,9 +15,15 @@ i{
       border:1px solid white;
       margin-left: 50px;
   }
-  @media only screen and (min-width: 800px)
+  @media only screen and (min-width: 1024px)
   {
       .signup{
 margin-left: 70px;
       }
   }
+  @media only screen and (max-width: 768px)
+  {
+    .signup{
+margin-left: 63px;
+    }
+}
