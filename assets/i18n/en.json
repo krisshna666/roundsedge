@@ -1,0 +1,13 @@
+{
+    "home":{
+        "title":"home page",
+        "welcome_text": "We are a Boutique Tech Consulting partner, specializing on Cloud Native Solutions. We are obsessed about anything “CLOUD”. Our goal is to seamlessly automate development lifecycle,  modernize infrastructure and its associated applications.",
+        "services1":"Kubernetes and docker",
+        "services2":"IOT support",
+        "services3":"SaaS intensive training",
+        "services4":"Stunning Devops environment"
+    },
+    "settings":{
+        "title":"Setting page"
+    }
+}
