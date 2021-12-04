@@ -33,6 +33,7 @@ const routes: Routes = [
   {path:'weather-dashboard',component:WeatherComponent},
   {path:'listings',component:UserlistComponent},
   {path:'translator',component:HomeComponent}]},
+  { path: 'customers', loadChildren: () => import('./customers/customers.module').then(m => m.CustomersModule) },
 
 
 ];
